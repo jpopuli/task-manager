@@ -90,9 +90,11 @@ ul {
 	top: 4rem;
 	left: 50%;
 	transform: translateX(-50%);
+	display: none;
 }
 
 .overlay {
+	display: none;
 	background-color: rgba(44, 51, 51, 0.9);
 	position: absolute;
 	z-index: 10;
@@ -127,6 +129,10 @@ input {
 
 input:focus {
 	border: 1px solid rgba(122, 157, 84, 0.9);
+}
+
+.app {
+	display: none;
 }
 
 .heading {
@@ -208,6 +214,32 @@ input:focus {
 	width: 15px;
 	border: 2px solid rgba(122, 157, 84, 0.9);
 	cursor: pointer;
+	position: relative;
+}
+
+.checkbox::after {
+	content: '✓';
+	position: absolute;
+	top: -14px;
+	left: -2px;
+	font-size: 1.6rem;
+	font-weight: bolder;
+	color: #8c3333;
+	display: none;
+}
+
+.checkbox.checked:after {
+	display: block;
+}
+
+.task-text {
+	display: inline-block;
+	/* Add other styling for the task text if needed */
+}
+
+.task-text.checked {
+	text-decoration: line-through;
+	/* Add other styling for the checked task text if needed */
 }
 
 .delete {
@@ -215,6 +247,7 @@ input:focus {
 	margin-right: 4px;
 	color: rgba(44, 51, 51, 0.5);
 	font-size: 1.2rem;
+	cursor: pointer;
 }
 
 .add-btn {
