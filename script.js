@@ -71,6 +71,14 @@ document.querySelector('#tasks-list').addEventListener('click', function (event)
 
 		checkboxElement.classList.toggle('checked');
 		taskTextElement.classList.toggle('checked');
+
+		let checkedTask = 0;
+		document.querySelectorAll('.checkbox').forEach(function (task) {
+			if (task.classList.contains('checked')) {
+				checkedTask++;
+			}
+		});
+		taskCount.textContent = tasks.length - checkedTask;
 	}
 });
 
