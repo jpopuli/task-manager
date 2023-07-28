@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Task Manager</title>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="overlay" style="display: none"></div>
+			<div class="prompt" style="display: none">
+				<div class="list-icon">
+					<img src="img/man.png" alt="Man" />
+				</div>
+				<form>
+					<input type="text" name="name" id="name" placeholder="Enter your name" />
+					<button class="accent-btn">Proceed</button>
+				</form>
+			</div>
+			<div class="home">
+				<div class="hero">
+					<h1>Task Master</h1>
+					<p><em>Stay on top of tasks, boost productivity, and achieve your goals with ease.</em></p>
+					<div class="list-icon">
+						<img src="img/list.png" alt="List" />
+					</div>
+				</div>
+
+				<div class="wave"></div>
+				<button type="button" class="accent-btn">Get started</button>
+			</div>
+
+			<div class="app" style="display: none">
+				<div class="heading">
+					<p>4:39:13 <span>pm</span></p>
+					<p>Friday, 28 July 2023</p>
+				</div>
+				<div class="wave-2"></div>
+				<div class="profile">
+					<div class="profile-img">
+						<img src="img/man.png" alt="Man" />
+					</div>
+					<div class="profile-context">
+						<p>Hello <span>Jerome Nel</span><task-name/p></p>
+						<p>Today you have <span>4</span> tasks</p>
+					</div>
+				</div>
+				<ul class="task">
+					<li class="item">
+						<span class="checkbox"></span>
+						<span>Swimming in a pool</span>
+						<span class="delete">&times;</span>
+					</li>
+					<li class="item">
+						<span class="checkbox"></span>
+						<span>Swimming in a pool</span>
+						<span class="delete">&times;</span>
+					</li>
+					<li class="item">
+						<span class="checkbox"></span>
+						<span>Swimming in a pool</span>
+						<span class="delete">&times;</span>
+					</li>
+					<li class="item">
+						<span class="checkbox"></span>
+						<span>Swimming in a pool</span>
+						<span class="delete">&times;</span>
+					</li>
+					<li class="item">
+						<span class="checkbox"></span>
+						<span>Swimming in a pool</span>
+						<span class="delete">&times;</span>
+					</li>
+				</ul>
+				<div class="prompt new-task" style="display: none">
+					<div class="list-icon">
+						<img src="img/list.png" alt="List" />
+					</div>
+					<form>
+						<input type="text" name="task" id="task" placeholder="Enter new task" />
+						<div class="btn-group">
+							<button type="button" class="save">Save</button>
+							<button type="button" class="cancel">Cancel</button>
+						</div>
+					</form>
+				</div>
+				<button class="add-btn">&plus;</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
