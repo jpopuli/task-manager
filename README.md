@@ -6,20 +6,20 @@ Task Manager is a user-friendly web application for organizing and tracking dail
 
 ### Home
 
-![Default](screenshots/s1.PNG);
+![Default](screenshots/s1.PNG)
 
 ### Username
 
-![Default](screenshots/s2.PNG);
+![Default](screenshots/s2.PNG)
 
 ### Create task
 
-![Default](screenshots/s5.PNG);
+![Default](screenshots/s5.PNG)
 
 ### View task
 
-![Default](screenshots/s3.PNG);
+![Default](screenshots/s3.PNG)
 
 ### Finished task
 
-![Default](screenshots/s4.PNG);
+![Default](screenshots/s4.PNG)
